@@ -39,9 +39,9 @@
       <nav>
         <ul>
           <li><a href="#apropos">À propos de moi</a></li>
+          <li><a href="#formation">Formation</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#experience">Expérience</a></li>
-          <li><a href="#formation">Formation</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -60,7 +60,7 @@
             <h1 id="animated-text">Corentin Perdrizet<span id="cursor"></span></h1>
           </div>
         <p class="intro-description">
-          Etudiant en école d'ingénieur à l'<span class="highlighted-text">Enseirb-Matmeca</span>.
+          Etudiant en école d'ingénieur à l'<a href="https://enseirb-matmeca.bordeaux-inp.fr/fr" target="_blank"><span class="highlighted-text" style="text-decoration: none;">Enseirb-Matmeca</span></a>.
         </p>
       </div>
       <iframe id="molecule" src="three.js-master/examples/css3d_molecules.html" width="1000" height="1000" style="margin-left: -200px; flex: 0 0 100%; pointer-events: none;"></iframe>
@@ -69,23 +69,121 @@
     
     
     
-    <!-- A propos -->
-    <section id="apropos" data-aos="fade-up">
-      <div class="section-heading">
-        <span class="about-num">01.</span>
-        <h2 class="about-heading">À propos de moi</h2>
-        <hr />
-        <div class="empty-space"></div>
-      </div>
-      <!-- Reste du contenu de la section -->
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit ipsa veniam odit rem quae. Deleniti ipsum reprehenderit eveniet minus optio quisquam pariatur. Aliquam odio cum nostrum consequatur, vero voluptas ullam vitae qui suscipit. Ab illo sit nemo velit nam tempora suscipit, ea ut saepe, cupiditate nobis corporis consequuntur animi excepturi deleniti impedit assumenda sequi alias exercitationem unde! Illum ea aut obcaecati, tempore eaque natus facere hic fuga inventore modi consequuntur illo, in possimus cumque delectus praesentium at, dolorem commodi odit suscipit assumenda? Earum sapiente numquam quos aliquid, omnis, distinctio laudantium officiis nam, quaerat totam sunt minima eos quas corporis in.</p>
-    </section>
+<!-- À propos -->
+<section id="apropos" data-aos="fade-up">
+  <div class="section-heading">
+    <span class="about-num">01.</span>
+    <h2 class="about-heading">À propos de moi</h2>
+    <hr />
+    <div class="empty-space"></div>
+  </div>
+  <!-- Contenu de la section À propos -->
+  <p>Étudiant situé à <span class="highlighted-text">Bordeaux</span> en 2ème année d'école d'ingénieur spécialisé en informatique à l'<a href="https://enseirb-matmeca.bordeaux-inp.fr/fr" target="_blank"><span class="highlighted-text">Enseirb-Matmeca</span></a>.</p>
+  <p>Passionné par les technologies de pointe et je prévois de me spécialiser en <span class="highlighted-text">intelligence artificielle</span> l'année prochaine.</p>
+  <p>Je suis actuellement à la recherche d'un <span class="highlighted-text">stage de 3 mois à Berlin à partir de Juin 2024</span>.</p>
+  <span id="competencesdev">Compétences développées :</span>
+ <!-- Compétences -->
+ <br>
+ <br>
+<div class="competences 1">
+  <div class="competence-bulle">
+    <p> Java</p>
+  </div>
+  <div class="competence-bulle">
+    <p> Javascript</p>
+  </div>
+  <div class="competence-bulle">
+    <p> Typescript</p>
+  </div>
+<!-- </div>
+<div class="competences 2"> -->
+  <div class="competence-bulle">
+    <p> Python</p>
+  </div>
+  <div class="competence-bulle">
+    <p> C</p>
+  </div>
+  <div class="competence-bulle">
+    <p>C++</p>
+  </div>
+<!-- </div>
+<div class="competences 3"> -->
+  <div class="competence-bulle">
+    <p> SQL</p>
+  </div>
+  <div class="competence-bulle">
+    <p> HTML</p>
+  </div>
+  <div class="competence-bulle">
+    <p> CSS</p>
+  </div>
+</div>
+</section>
     
+
+    <!-- Formation -->
+<section id="formation" data-aos="fade-up">
+  <div class="section-heading">
+    <span class="about-num">02.</span>
+    <h2 class="about-heading">Formation</h2>
+    <hr />
+    <div class="empty-space"></div>
+  </div>
+
+  <!-- Timeline -->
+  <div class="timeline">
+
+    <!--Well, The reason for this div is to fill space. 
+  This space is technically used for keeping dates, 
+  but I didn't find the need for dates. However, I'll provide 
+  you the styling for dates, so that you can use it if you 
+  wanted to.-->
+  <div id="date-1" class="timeline-empty">2025<br><br><br><br><br><br><br><br>2022</div>
+
+  <!--This is the class where the timeline graphics are 
+  housed in. Note that we have timeline-circle 
+  here for that pointer in timeline.-->
+
+        <div class="timeline-middle">
+          <div class="timeline-circle"></div>
+      </div>
+      <div class="timeline-component timeline-content">
+          <h3>Ecole d'ingénieur en Informatique</h3>
+          <p><a href="https://enseirb-matmeca.bordeaux-inp.fr/fr" target="_blank"><span class="highlighted-text enseirb">Enseirb-Matmeca</span></a>, Talence</p>
+          <p>Étudiant en deuxième année de la filière informatique.<br>Cursus de 3 ans menant à un diplôme d'ingénieur (niveau Master).</p>
+          <p class="matiere">Algorithmiques, Programmation, Datascience, Ingenierie</p>
+      </div>
+          <div class="timeline-component timeline-content">
+                  <h3>Classe préparatoire aux grandes écoles</h3>
+                  <p><span class="highlighted-text">Lycée Camille-Jullian</span>, Bordeaux</p>
+                  <p>Classe préparatoire cursus MPSI-MP</p>
+                  <p class="matiere">Analyse, Algèbre, Physique, Science de l'ingénieur</p>
+          </div>
+          <div class="timeline-middle">
+              <div class="timeline-circle"></div>
+          </div>
+          <div id="date-2" class="timeline-empty">2022<br><br><br><br><br>2020</div>
+
+          <div id="date-3" class="timeline-empty">
+            2020<br><br><br><br><br>2017
+          </div>
+
+        <div class="timeline-middle">
+            <div class="timeline-circle"></div>
+        </div>
+        <div class=" timeline-component timeline-content">
+          <h3>Baccalauréat Scientifique</h3>
+          <p><span class="highlighted-text">Lycée Nord Bassin - Simon Weil</span>, Andernos-Les-Bains</p>
+          <p>Baccalauréat scientifique option Mathématiques</p>
+    </div>
+
+  </div>
+</section>  
     
 <!-- Portfolio -->
 <section id="portfolio" data-aos="fade-up">
   <div class="section-heading">
-    <span class="about-num">02.</span>
+    <span class="about-num">03.</span>
     <h2 class="about-heading">Portfolio</h2>
     <hr />
     <div class="empty-space"></div>
@@ -104,7 +202,7 @@
       <div class="card-header"></div>
       <div class="card-title">Projets d’algorithmique numérique</div>
       <div class="card-desc">Une série de projets axés sur l'algorithmique numérique, comprenant la modélisation de vagues, de pendules à N maillons, de pressions sur une aile d'avion, de calcul de points de Lagrange, entre autres problématiques complexes.</div>
-      <div class="card-tech">Python, Analyse, Algèbre, Mathématiques appliquées</div>
+      <div class="card-tech"><br>Python, Analyse, Algèbre, Mathématiques appliquées</div>
     </div>
     <!-- Carte 3 -->
     <div class="projects-card">
@@ -112,7 +210,7 @@
       <div class="card-title">Programmation impérative</div>
       <div class="card-desc">Conception et implémentation de deux jeux de plateau (Mansuba et Amazon), en utilisant la programmation impérative en C.
         Cette expérience a notablement renforcé mes aptitudes à collaborer en environnement de programmation et à concevoir des systèmes efficaces.</div>
-      <div class="card-tech">Architecture server/client, Programmation impérative (C), Utilisation de git</div>
+      <div class="card-tech"><br>Architecture server/client, Programmation impérative (C), Utilisation de git</div>
     </div>
     <!-- Carte 4 -->
     <div class="projects-card">
@@ -125,16 +223,16 @@
     <div class="projects-card">
       <div class="card-header"></div>
       <div class="card-title">Raccordement de courbes lisses</div>
-      <div class="card-desc">Projet personnel de mathématiques appliquées :
+      <div class="card-desc">Projet personnel de mathématiques appliquées présenté à l'université de Paris :
         Etude, élaboration et implémentation de solutions permettant de minimiser les accidents routiers grâce aux courbes clothoïdes</div>
-      <div class="card-tech">Mathématiques Appliquées, Calcul Intégral et Différentiel, Analyse, Python</div>
+      <div class="card-tech"><br>Mathématiques Appliquées, Calcul Intégral et Différentiel, Analyse, Python</div>
     </div>
 </section>
     
-    <!-- Experience -->
+<!-- Experience -->
 <section id="experience" data-aos="fade-up">
   <div class="section-heading">
-    <span class="about-num">03.</span>
+    <span class="about-num">04.</span>
     <h2 class="about-heading">Expérience Professionnelle</h2>
     <hr />
     <div class="empty-space"></div>
@@ -143,6 +241,7 @@
   <div class="experience-timeline">
     <!-- Expérience 1 -->
     <div class="experience-point">
+      <div class="experience-date">Juillet - Aout<br>2023</div>
       <img src="fleche.png" alt="Expérience 1" class="point-img">
       <div class="experience-info">
         <h3>Plongeur - Pizzeria des Bois, Le Porge</h3>
@@ -151,6 +250,7 @@
     </div>
     <!-- Expérience 2 -->
     <div class="experience-point">
+      <div class="experience-date">Juillet - Aout<br>2021</div>
       <img src="fleche.png" alt="Expérience 1" class="point-img">
       <div class="experience-info">
         <h3>Vendeur - Camping Les Pastourelles, Lège-Cap Ferret</h3>
@@ -159,6 +259,7 @@
     </div>
     <!-- Expérience 3 -->
     <div class="experience-point">
+      <div class="experience-date">Depuis 2020</div>
       <img src="fleche.png" alt="Expérience 1" class="point-img">
       <div class="experience-info">
         <h3>Professeur particulier</h3>
@@ -167,6 +268,7 @@
     </div>
     <!-- Expérience 4 -->
     <div class="experience-point">
+      <div class="experience-date">Aout - Novembre<br>2019</div>
       <img src="fleche.png" alt="Expérience 1" class="point-img">
       <div class="experience-info">
         <h3>Equipier polyvalent - McDonald, Arès</h3>
@@ -176,59 +278,6 @@
   </div>
 </section>
 
-
-<!-- Formation -->
-<section id="formation" data-aos="fade-up">
-  <div class="section-heading">
-    <span class="about-num">04.</span>
-    <h2 class="about-heading">Formation</h2>
-    <hr />
-    <div class="empty-space"></div>
-  </div>
-
-  <!-- Formation 1 -->
-<div class="formation-item">
-  <div class="formation-info">
-    <h3>Ecole d'ingénieur en Informatique</h3>
-    <p>Enseirb-Matmeca, Talence</p>
-    <p class="formation-date">Depuis Septembre 2022</p>
-  </div>
-  <div class="arrow">
-    <div class="arrow-line"></div>
-    <div class="arrow-dot">2022</div>
-    <div class="arrow-dot">2021</div>
-    <div class="arrow-dot">2020</div>
-  </div>
-  <div class="formation-description">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam doloribus, beatae natus repellat sapiente nihil aspernatur quis, odit nam qui, animi ullam doloremque ut ipsum...</p>
-  </div>
-</div>
-
-
-  <!-- Formation 2 -->
-  <div class="formation-item">
-    <div class="formation-info">
-      <h3>Classe préparatoire aux grandes écoles</h3>
-      <p>Lycée Camille-Jullian, Bordeaux</p>
-      <p class="formation-date">Septembre 2020 - Juillet 2022</p>
-    </div>
-    <div class="formation-description">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam doloribus, beatae natus repellat sapiente nihil aspernatur quis, odit nam qui, animi ullam doloremque ut ipsum. Explicabo libero, adipisci repellendus non perferendis doloribus nobis inventore quae sit laudantium rerum delectus corporis sunt modi vel fugit ullam neque omnis? Quos, nobis corporis!</p>
-    </div>
-  </div>
-
-  <!-- Formation 3 -->
-  <div class="formation-item">
-    <div class="formation-info">
-      <h3>Baccalauréat Scientifique</h3>
-      <p>Lycée Nord Bassin - Simon Weil, Andernos-Les-Bains</p>
-      <p class="formation-date">Septembre 2015 - Juin 2017</p>
-    </div>
-    <div class="formation-description">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam doloribus, beatae natus repellat sapiente nihil aspernatur quis, odit nam qui, animi ullam doloremque ut ipsum. Explicabo libero, adipisci repellendus non perferendis doloribus nobis inventore quae sit laudantium rerum delectus corporis sunt modi vel fugit ullam neque omnis? Quos, nobis corporis!</p>
-    </div>
-  </div>
-</section>
 
 
 <!-- Contact -->

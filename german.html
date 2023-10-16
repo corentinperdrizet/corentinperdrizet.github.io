@@ -42,34 +42,30 @@
       <nav>
         <ul>
           <li><a href="#apropos">Über mich</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#experience">Berufserfahrung</a></li>
           <li><a href="#formation">Bildung</a></li>
-          <li><a href="#blog">Blog</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#experience">Erfahrung</a></li>
           <li><a href="#contact">Kontakt</a></li>
         </ul>
       </nav>
     </div>
-</header>
+  </header>
 
   <main>
-
-
     <div class="intro" style="display: flex; justify-content: space-between;">
       <div class="intro-text" style="flex: 0 0 50%;">
         <p class="welcome-text">Willkommen, ich bin</p>
-        <h1 class="intro-name">Corentin Perdrizet</h1>
+        <div class="typewriter">
+          <h1 id="animated-text">Corentin Perdrizet<span id="cursor"></span></h1>
+        </div>
         <p class="intro-description">
-          Ingenieurstudent an der <span class="highlighted-text">Enseirb-Matmeca</span>.
+          Student an der <a href="https://enseirb-matmeca.bordeaux-inp.fr/fr" target="_blank"><span class="highlighted-text" style="text-decoration: none;">Enseirb-Matmeca</span></a>, im zweiten Jahr im Studiengang Informatik.
         </p>
       </div>
-      <iframe id="molecule" src="three.js-master/examples/css3d_molecules.html" width="600" height="600" style="margin-left: -200px; flex: 0 0 100%;"></iframe>
+      <iframe id="molecule" src="three.js-master/examples/css3d_molecules.html" width="1000" height="1000" style="margin-left: -200px; flex: 0 0 100%; pointer-events: none;"></iframe>
     </div>
 
-    
-    
-    
-    <!-- About -->
+    <!-- Über mich -->
     <section id="apropos" data-aos="fade-up">
       <div class="section-heading">
         <span class="about-num">01.</span>
@@ -77,112 +73,239 @@
         <hr />
         <div class="empty-space"></div>
       </div>
-      <!-- Rest of the section's content -->
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ipsa veniam odit rem quae. Deleniti ipsum reprehenderit eveniet minus optio quisquam pariatur. Aliquam odio cum nostrum consequatur, vero voluptas ullam vitae qui suscipit. Ab illo sit nemo velit nam tempora suscipit, ea ut saepe, cupiditate nobis corporis consequuntur animi excepturi deleniti impedit assumenda sequi alias exercitationem unde! Illum ea aut obcaecati, tempore eaque natus facere hic fuga inventore modi consequuntur illo, in possimus cumque delectus praesentium at, dolorem commodi odit suscipit assumenda? Earum sapiente numquam quos aliquid, omnis, distinctio laudantium officiis nam, quaerat totam sunt minima eos quas corporis in.</p>
+      <!-- Inhalt des Über-mich-Abschnitts -->
+      <p>Student in <span class="highlighted-text">Bordeaux</span>, im zweiten Jahr einer Ingenieursschule mit Spezialisierung in Informatik an der <a href="https://enseirb-matmeca.bordeaux-inp.fr/fr" target="_blank"><span class="highlighted-text">Enseirb-Matmeca</span></a>.</p>
+      <p>Begeistert von modernen Technologien und plane, mich im nächsten Jahr auf <span class="highlighted-text">künstliche Intelligenz</span> zu spezialisieren.</p>
+      <p>Ich suche derzeit nach einem <span class="highlighted-text">3-monatigen Praktikum in Berlin ab Juni 2024</span>.</p>
+      <span id="competencesdev">Entwickelte Fähigkeiten:</span>
+      <!-- Fähigkeiten -->
+      <br>
+      <br>
+      <div class="competences 1">
+        <div class="competence-bulle">
+          <p> Java</p>
+        </div>
+        <div class="competence-bulle">
+          <p> Javascript</p>
+        </div>
+        <div class="competence-bulle">
+          <p> Typescript</p>
+        </div>
+      <!-- </div>
+      <div class="competences 2"> -->
+        <div class="competence-bulle">
+          <p> Python</p>
+        </div>
+        <div class="competence-bulle">
+          <p> C</p>
+        </div>
+        <div class="competence-bulle">
+          <p>C++</p>
+        </div>
+      <!-- </div>
+      <div class="competences 3"> -->
+        <div class="competence-bulle">
+          <p> SQL</p>
+        </div>
+        <div class="competence-bulle">
+          <p> HTML</p>
+        </div>
+        <div class="competence-bulle">
+          <p> CSS</p>
+        </div>
+      </div>
     </section>
-    
-    
+
+    <!-- Bildung -->
+    <section id="formation" data-aos="fade-up">
+      <div class="section-heading">
+        <span class="about-num">02.</span>
+        <h2 class="about-heading">Bildung</h2>
+        <hr />
+        <div class="empty-space"></div>
+      </div>
+      <!-- Zeitachse -->
+      <div class="timeline">
+        <div id="date-1" class="timeline-empty">2025<br><br><br><br><br><br><br><br>2022</div>
+        <div class="timeline-middle">
+          <div class="timeline-circle"></div>
+        </div>
+        <div class="timeline-component timeline-content">
+          <h3>Ingenieurschule für Informatik</h3>
+          <p><a href="https://enseirb-matmeca.bordeaux-inp.fr/fr" target="_blank"><span class="highlighted-text enseirb">Enseirb-Matmeca</span></a>, Talence</p>
+          <p>Zweijähriger Student in einem dreijährigen Graduiertenkurs mit Abschluss auf Masterniveau.</p>
+          <p class="matiere">Algorithmen, Programmierung, Datenwissenschaft, Ingenieurwesen</p>
+        </div>
+        <div class="timeline-component timeline-content">
+          <h3>Intensivstudium</h3>
+          <p><span class="highlighted-text">Lycée Camille-Jullian</span>, Bordeaux</p>
+          <p>Vorbereitungsklasse MPSI-MP (Mathematik & Physik)</p>
+          <p class="matiere">Analysis, Algebra, Physik, Ingenieurwissenschaft</p>
+        </div>
+        <div class="timeline-middle">
+          <div class="timeline-circle"></div>
+        </div>
+        <div id="date-2" class="timeline-empty">2022<br><br><br><br><br>2020</div>
+        <div id="date-3" class="timeline-empty">
+          2020<br><br><br><br><br>2017
+        </div>
+        <div class="timeline-middle">
+          <div class="timeline-circle"></div>
+        </div>
+        <div class=" timeline-component timeline-content">
+          <h3>Französisches Abitur</h3>
+          <p><span class="highlighted-text">Lycée Nord Bassin - Simon Weil</span>, Andernos-Les-Bains</p>
+          <p>Französisches Abitur mit Schwerpunkt Mathematik</p>
+        </div>
+      </div>
+    </section>
+
     <!-- Portfolio -->
     <section id="portfolio" data-aos="fade-up">
       <div class="section-heading">
-        <span class="about-num">02.</span>
+        <span class="about-num">03.</span>
         <h2 class="about-heading">Portfolio</h2>
         <hr />
         <div class="empty-space"></div>
       </div>
-      <!-- Rest of the section's content -->
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ipsa veniam odit rem quae. Deleniti ipsum reprehenderit eveniet minus optio quisquam pariatur. Aliquam odio cum nostrum consequatur, vero voluptas ullam vitae qui suscipit. Ab illo sit nemo velit nam tempora suscipit, ea ut saepe, cupiditate nobis corporis consequuntur animi excepturi deleniti impedit assumenda sequi alias exercitationem unde! Illum ea aut obcaecati, tempore eaque natus facere hic fuga inventore modi consequuntur illo, in possimus cumque delectus praesentium at, dolorem commodi odit suscipit assumenda? Earum sapiente numquam quos aliquid, omnis, distinctio laudantium officiis nam, quaerat totam sunt minima eos quas corporis in.</p>
-
+      <!-- Portfolio-Kartenraster -->
+      <div class="projects-grid">
+        <!-- Karte 1 -->
+        <div class="projects-card">
+          <div class="card-header"></div>
+          <div class="card-title">Abfallentsorgungsroboter</div>
+          <div class="card-desc">Programmierung und Optimierung des Wegs eines Abfallentsorgungsroboters, der Hindernisse vermeidet.</div>
+          <div class="card-tech">Graphentheorie, Weggewichtung, Wegoptimierung</div>
+        </div>
+        <!-- Karte 2 -->
+        <div class="projects-card">
+          <div class="card-header"></div>
+          <div class="card-title">Digitale algorithmische Projekte</div>
+          <div class="card-desc">Eine Serie von Projekten, die sich auf digitale Algorithmen konzentrieren, darunter die Modellierung von Wellen, Pendeln mit N-Verbindungen, Drücken auf einem Flügel eines Flugzeugs, Berechnung der Lagrange-Punkte und andere komplexe Themen.</div>
+          <div class="card-tech"><br>Python, Analysis, Algebra, Angewandte Mathematik</div>
+        </div>
+        <!-- Karte 3 -->
+        <div class="projects-card">
+          <div class="card-header"></div>
+          <div class="card-title">Imperative Programmierung</div>
+          <div class="card-desc">Entwurf und Implementierung von zwei Brettspielen (Mansuba und Amazon) unter Verwendung imperativer Programmierung in C. Diese Erfahrung hat meine Fähigkeit zur Zusammenarbeit in einer Programmierumgebung und zur Gestaltung effizienter Systeme erheblich gestärkt.</div>
+          <div class="card-tech"><br>Server/Client-Architektur, Imperative Programmierung (C), Verwendung von git</div>
+        </div>
+        <!-- Karte 4 -->
+        <div class="projects-card">
+          <div class="card-header"></div>
+          <div class="card-title">Funktionale Programmierung</div>
+          <div class="card-desc">Entwurf und Implementierung eines Tower-Defense-Spiels in JavaScript und seiner grafischen Benutzeroberfläche.</div>
+          <div class="card-tech">JavaScript, Funktionale Programmierung, HTML, CSS, Verwendung von git</div>
+        </div>
+        <!-- Karte 5 -->
+        <div class="projects-card">
+          <div class="card-header"></div>
+          <div class="card-title">Verbindung glatter Kurven</div>
+          <div class="card-desc">Persönliches Projekt in angewandter Mathematik, präsentiert an der Universität Paris: Studie, Entwicklung und Implementierung von Lösungen zur Minimierung von Verkehrsunfällen unter Verwendung von Klothoidenkurven.</div>
+          <div class="card-tech"><br>Angewandte Mathematik, Integral- und Differentialrechnung, Analysis, Python</div>
+        </div>
+      </div>
     </section>
-    
-    <!-- Experience -->
+
+    <!-- Berufserfahrung -->
     <section id="experience" data-aos="fade-up">
       <div class="section-heading">
-        <span class="about-num">03.</span>
+        <span class="about-num">04.</span>
         <h2 class="about-heading">Berufserfahrung</h2>
         <hr />
         <div class="empty-space"></div>
       </div>
-  <!-- Rest of the section's content -->
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ipsa veniam odit rem quae. Deleniti ipsum reprehenderit eveniet minus optio quisquam pariatur. Aliquam odio cum nostrum consequatur, vero voluptas ullam vitae qui suscipit. Ab illo sit nemo velit nam tempora suscipit, ea ut saepe, cupiditate nobis corporis consequuntur animi excepturi deleniti impedit assumenda sequi alias exercitationem unde! Illum ea aut obcaecati, tempore eaque natus facere hic fuga inventore modi consequuntur illo, in possimus cumque delectus praesentium at, dolorem commodi odit suscipit assumenda? Earum sapiente numquam quos aliquid, omnis, distinctio laudantium officiis nam, quaerat totam sunt minima eos quas corporis in.</p>
-
+      <!-- Erfahrungszeitachse -->
+      <div class="experience-timeline">
+        <!-- Erfahrung 1 -->
+        <div class="experience-point">
+          <div class="experience-date">Juli - August<br>2023</div>
+          <img src="fleche.png" alt="Erfahrung 1" class="point-img">
+          <div class="experience-info">
+            <h3>Geschirrspüler - Pizzeria des Bois, Le Porge</h3>
+            <p>Küchenhilfe und Geschirrspüler.</p>
+          </div>
+        </div>
+        <!-- Erfahrung 2 -->
+        <div class="experience-point">
+          <div class="experience-date">Juli - August<br>2021</div>
+          <img src="fleche.png" alt="Erfahrung 1" class="point-img">
+          <div class="experience-info">
+            <h3>Verkaufsmitarbeiter - Camping Les Pastourelles, Lège-Cap Ferret</h3>
+            <p>Service und Verkauf an der Rezeption eines Campingplatzes.</p>
+          </div>
+        </div>
+        <!-- Erfahrung 3 -->
+        <div class="experience-point">
+          <div class="experience-date">Seit 2020</div>
+          <img src="fleche.png" alt="Erfahrung 1" class="point-img">
+          <div class="experience-info">
+            <h3>Privattutor</h3>
+            <p>Mathematik- und Physikunterricht für Gymnasiasten.</p>
+          </div>
+        </div>
+        <!-- Erfahrung 4 -->
+        <div class="experience-point">
+          <div class="experience-date">August - November<br>2019</div>
+          <img src="fleche.png" alt="Erfahrung 1" class="point-img">
+          <div class="experience-info">
+            <h3>Küchenhilfe - McDonald's, Arès</h3>
+            <p>Kochen und Service nach Kundenwunsch.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-<!-- Education -->
-<section id="formation" data-aos="fade-up">
-  <div class "section-heading">
-    <span class="about-num">04.</span>
-    <h2 class="about-heading">Bildung</h2>
-    <hr />
-    <div class="empty-space"></div>
-  </div>
-  <!-- Rest of the section's content -->
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ipsa veniam odit rem quae. Deleniti ipsum reprehenderit eveniet minus optio quisquam pariatur. Aliquam odio cum nostrum consequatur, vero voluptas ullam vitae qui suscipit. Ab illo sit nemo velit nam tempora suscipit, ea ut saepe, cupiditate nobis corporis consequuntur animi excepturi deleniti impedit assumenda sequi alias exercitationem unde! Illum ea aut obcaecati, tempore eaque natus facere hic fuga inventore modi consequuntur illo, in possimus cumque delectus praesentium at, dolorem commodi odit suscipit assumenda? Earum sapiente numquam quos aliquid, omnis, distinctio laudantium officiis nam, quaerat totam sunt minima eos quas corporis in.</p>
-
-</section>
-
-<!-- Blog -->
-<section id="blog" data-aos="fade-up">
-  <div class="section-heading">
-    <span class="about-num">05.</span>
-    <h2 class="about-heading">Blog</h2>
-    <hr />
-    <div class="empty-space"></div>
-  </div>
-  <!-- Rest of the section's content -->
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ipsa veniam odit rem quae. Deleniti ipsum reprehenderit eveniet minus optio quisquam pariatur. Aliquam odio cum nostrum consequatur, vero voluptas ullam vitae qui suscipit. Ab illo sit nemo velit nam tempora suscipit, ea ut saepe, cupiditate nobis corporis consequuntur animi excepturi deleniti impedit assumenda sequi alias exercitationem unde! Illum ea aut obcaecati, tempore eaque natus facere hic fuga inventore modi consequuntur illo, in possimus cumque delectus praesentium at, dolorem commodi odit suscipit assumenda? Earum sapiente numquam quos aliquid, omnis, distinctio laudantium officiis nam, quaerat totam sunt minima eos quas corporis in.</p>
-
-</section>
-
-<!-- Contact -->
-<section id="contact" data-aos="fade-up">
-  <div class="section-heading">
-    <span class="about-num">06.</span>
-    <h2 class="about-heading">Kontakt</h2>
-    <hr />
-    <div class="empty-space"></div>
-  </div>
-  <!-- Rest of the section's content -->
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ipsa veniam odit rem quae. Deleniti ipsum reprehenderit eveniet minus optio quisquam pariatur. Aliquam odio cum nostrum consequatur, vero voluptas ullam vitae qui suscipit. Ab illo sit nemo velit nam tempora suscipit, ea ut saepe, cupiditate nobis corporis consequuntur animi excepturi deleniti impedit assumenda sequi alias exercitationem unde! Illum ea aut obcaecati, tempore eaque natus facere hic fuga inventore modi consequuntur illo, in possimus cumque delectus praesentium at, dolorem commodi odit suscipit assumenda? Earum sapiente numquam quos aliquid, omnis, distinctio laudantium officiis nam, quaerat totam sunt minima eos quas corporis in.</p>
-
-</section>
+    <!-- Kontakt -->
+    <section id="contact" data-aos="fade-up">
+      <div class="section-heading">
+        <span class="about-num">05.</span>
+        <h2 class="about-heading">Kontakt</h2>
+        <hr />
+        <div class="empty-space"></div>
+      </div>
+      <div class="contact-container">
+        <div class="contact-links">
+          <a href="mailto:corentin.perdrizet@enseirb-matmeca.fr" class="btnmore">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="mail" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+              <path d="M437.332 80H74.668C51.199 80 32 99.198 32 122.667v266.666C32 412.802 51.199 432 74.668 432h362.664C460.801 432 480 412.802 480 389.333V122.667C480 99.198 460.801 80 437.332 80zM432 170.667L256 288 80 170.667V1281176 117.333L432 128v42.667z"></path>
+            </svg>
+            Mail
+          </a>
+        </div>
+        <div class="linkedin-link">
+          <a href="https://www.linkedin.com/in/corentin-perdrizet-53a914264/" target="_blank">
+            <img src="logo.png" alt="LinkedIn Logo">
+          </a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>© Corentin Perdrizet 2023. All rights reserved.</p>
+    <p>© Corentin Perdrizet 2023. Alle Rechte vorbehalten.</p>
   </footer>
 
-  <!-- Script to detect when at the top
-     of the page to make the header transparent -->
+  <!-- Skript zum Erkennen, wann sich die Seite oben befindet, um den Header transparent zu machen -->
   <script>
-    // Select the language button by its ID
     const languageToggle = document.getElementById("language-toggle");
+    let currentLanguage = "de";
 
-    // Define a variable to track the current language
-    let currentLanguage = "en"; // English is displayed by default
-
-    // Function to toggle between languages
     function toggleLanguage() {
-      if (currentLanguage === "en") {
-        // If the current language is English, switch to French
+      if (currentLanguage === "de") {
         currentLanguage = "fr";
-        languageToggle.textContent = "Fr"; // Update the button text
-        // You can also update the content of your page to French here
+        languageToggle.textContent = "Fr";
       } else {
-        // Otherwise, switch to English
-        currentLanguage = "en";
-        languageToggle.textContent = "En"; // Update the button text
-        // You can also update the content of your page to English here
+        currentLanguage = "de";
+        languageToggle.textContent = "De";
       }
     }
 
-    // Add an event listener for clicking the button
     languageToggle.addEventListener("click", toggleLanguage);
 
-    // Select the header element with the ID 'main-header'
     const header = document.getElementById("main-header");
 
-    // Function to update the header class based on scrolling
     function updateHeaderClass() {
       if (window.scrollY === 0) {
         header.classList.remove("scrolled");
@@ -191,18 +314,12 @@
       }
     }
 
-    // Listen for the scroll event and update the header class
     window.addEventListener("scroll", updateHeaderClass);
-
-    // Run the function once to initialize the header class
     updateHeaderClass();
   </script>
 
-<script>
-  AOS.init();
-</script>
-
-<script src="three.js/examples/moula.html"></script>
-
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
