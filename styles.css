@@ -70,7 +70,7 @@ header {
   letter-spacing: 0.15em;
   position: relative;
   animation:
-    typing 2.5s steps(40, end),
+    typing 1.5s steps(40, end),
     blink-caret 0.75s step-end infinite;
 }
 
