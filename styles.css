@@ -33,6 +33,10 @@ header {
   z-index: 100;
 }
 
+#competencesdev{
+  color: #bdc3c7;
+  font-size: 1.2em;
+}
 
 /* Styles pour le header avec arrière-plan lors du défilement */
 /* header.scrolled {
@@ -256,8 +260,41 @@ nav a:hover {
   margin-left: 1em;
 }
 
+a:link 
+{ 
+ text-decoration:none; 
+} 
+
 .highlighted-text {
   color: #64ffda;
+  /* text-decoration: none; */
+}
+
+
+.competence-bulle {
+  height: 30px;
+  font-size: 0.65rem; /* Taille plus petite */
+  font-family: 'Nunito', sans-serif; /* Remplacez 'Nunito' par la police de votre choix */
+  text-align: center;
+  padding: 6px 12px;
+  color: #64ffda; /* Nouvelle couleur */
+  background-color: transparent;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px; /* Espace en bas pour forcer le retour à la ligne */
+  border-radius: 20px; /* Bord arrondi */
+  box-shadow: 3px 3px 10px #64ffda, -1px -1px 1px #1d4a8e; /* Ombre */
+}
+
+
+.enseirb{
+  border-bottom: 1px solid #64ffda;
+  color: #64ffda; /* Pour conserver la couleur du texte d'origine */
+  text-decoration: none; /* Pour supprimer le soulignement par défaut */
+}
+
+.matiere{
+  color: #1d4a8e
 }
 
 .intro-description-school{
@@ -373,7 +410,7 @@ footer p {
 .card-title {
   font-size: 1.5em;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: -10px;
   color: #fff;
 }
 
@@ -393,10 +430,23 @@ footer p {
   position: relative;
 }
 
-.experience-point {
+/* .experience-point {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+} */
+
+.experience-point {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.experience-date {
+  width: 120px; 
+  text-align: center; 
+  margin-right: 20px; 
+  margin-top: 5px;
 }
 
 .point {
@@ -411,6 +461,7 @@ footer p {
   width: 20px; /* Ajustez la taille selon vos besoins */
   height: 20px;
   margin-right: 20px;
+  margin-top: 10px;
 }
 
 .experience-info {
@@ -429,58 +480,86 @@ footer p {
   padding: 80px 0;
 }
 
-.arrow {
-  position: relative;
-  width: 20px;
-  margin-top: 16px; /* Espace entre la flèche et le texte */
+
+/* TIMELINE */
+.design {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.arrow-line {
-  border-left: 2px solid #64ffda;
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative; /* Ajout de la position relative */
+  left: -60px; /* Décalage vers la gauche */
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-content {
+  padding: 20px;
+  background: #1f1f1f;
+  -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+  box-shadow: 3px 3px 10px #64ffda, -1px -1px 1px #1d4a8e;
+  border-radius: 5px;
+  color: white;
+  padding: 1.75rem;
+  transition: 0.4s ease;
+  overflow-wrap: break-word !important;
+  margin: 1rem;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  width: 400px
+}
+
+.timeline-component {
+  margin: 0px 20px 20px 20px;
+}
+
+.timeline-middle {
+  position: relative;
+  background-image: linear-gradient(45deg, #64ffda, #1d4a8e);
+  width: 3px;
   height: 100%;
 }
 
-.arrow-dot {
-  background-color: #64ffda;
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
+.main-middle {
+  opacity: 0;
+}
+
+.timeline-circle {
   position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-image: linear-gradient(45deg, #64ffda, #0a192f);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
-.formation-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 40px;
+@media screen and (min-width: 768px) {
+  .timeline {
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+  }
 }
 
-.formation-info {
-  flex: 1;
+#date-1 {
+  margin-left: 380px; /* Ajustez la valeur selon vos besoins */
 }
 
-.formation-info h3 {
-  color: #ccd6f6;
-  font-size: 24px;
-  margin-bottom: 8px;
+#date-2 {
+ margin-left: 20px;
 }
 
-.formation-info p {
-  color: #758394;
-  margin-bottom: 4px;
+#date-3 {
+  margin-left: 380px; /* Ajustez la valeur selon vos besoins */
 }
-
-.formation-date {
-  font-style: italic;
-}
-
-.formation-description {
-  flex: 2;
-  padding-left: 40px;
-}
-
 
 #contact {
   background-color: transparent;
