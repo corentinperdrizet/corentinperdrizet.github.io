@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corentin Perdrizet</title>
+  <link rel="icon" type="image/png" href="logo_C.png">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+
+<!-- Ligne pour charger Three.js depuis le dossier portfolio -->
+  <script src="three.js/build/three.min.js"></script>
+
+  
+
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <header id="main-header">
+    <div class="header-container" style="display: flex; align-items: center; justify-content: space-between;">
+      
+      <!-- Bouton Home avec image -->
+      <a href="#" class="home-btn" style="margin-right: auto;">
+        <img src="home.png" alt="Home" class="home-icon">
+      </a>
+      
+      <nav>
+        <ul>
+          <li><a href="#apropos">À propos de moi</a></li>
+          <li><a href="#formation">Formation</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#experience">Expérience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+  
+      <!-- Sélection de langue avec bulles -->
+      <div class="language-toggle" style="display: flex; align-items: center; gap: 10px; margin-left: 10px;">
+        <img src="language.png" alt="Language Selection" class="language-icon" style="width: 24px; height: 24px; cursor: pointer;"/>
+        <div class="language-bubbles">
+          <a href="index.html" class="lang-bubble">English</a>
+          <a href="french.html" class="lang-bubble current-lang">French</a>
+        </div>
+      </div>
+  
+    </div>
+  </header>
+ 
+  
+  <main>
+
+
+    <div class="intro" style="display: flex; justify-content: space-between;">
+      <div class="intro-text" style="margin-left: -100px; flex: 0 0 50%;">
+        <!-- <p class="welcome-text">Bienvenue, moi c'est</p> -->
+        <!-- <h1 class="intro-name">Corentin Perdrizet</h1> -->
+        <!-- Dans votre balise <h1> où se trouve votre nom -->
+          <div class="typewriter">
+            <h1 id="animated-text">Corentin Perdrizet<span id="cursor"></span></h1>
+          </div>
+          <p class="intro-description gradient-text">
+            Étudiant ingénieur en Intelligence Artificielle
+          </p>
+      </div>
+       <!-- Intégration de la vidéo en remplacement de l'iframe -->
+       <video id="brain-video" style="width: 80%; height: auto; margin-left: 30px; flex: 0 0 50%;" autoplay loop muted preload="auto">
+        <source src="darkbrain.mov" type="video/mp4">
+        Votre navigateur ne supporte pas les vidéos HTML5.
+      </video>
+    </div>
+
+    
+    
+    
+<!-- À propos -->
+<section id="apropos" data-aos="fade-up">
+  <div class="section-heading">
+    <span class="about-num">01.</span>
+    <h2 class="about-heading gradient-text">À propos de moi</h2>
+    <hr />
+    <div class="empty-space"></div>
+  </div>
+  <!-- Contenu de la section À propos -->
+  <p>Étudiant situé à <span class="highlighted-text">Bordeaux</span> en dernière année d'école d'ingénieur informatique spécialisé en <span class="highlighted-text">intelligence artificielle</span> à l'<a href="https://enseirb-matmeca.bordeaux-inp.fr/fr" target="_blank"><span class="highlighted-text">Enseirb-Matmeca</span></a>.</p>
+  <p>Passionné par les technologies de pointe et les avancées en IA, je suis actuellement à la recherche d’un stage de 5 à 6 mois à l’étranger, disponible à partir de mars 2025, pour enrichir mon expertise dans ce domaine.</span>.</p>
+  
+
+
+  <span id="competencesdev">Compétences développées :</span>
+ <!-- Compétences -->
+ <br>
+ <br>
+<div class="competences 1">
+  <div class="competence-bulle">
+    <p> Python</p>
+  </div>
+  <div class="competence-bulle">
+    <p> TensorFlow</p>
+  </div>
+  <div class="competence-bulle">
+    <p> PyTorch</p>
+  </div>
+  <div class="competence-bulle">
+    <p> Machine Learning</p>
+  </div>
+  <div class="competence-bulle">
+    <p> Deep Learning</p>
+  </div>
+  <div class="competence-bulle">
+    <p> Reinforcment Learning</p>
+  </div>
+  <div class="competence-bulle">
+    <p> Natural Language Processing</p>
+  </div>
+  <div class="competence-bulle">
+    <p> Large Language Model</p>
+  </div>
+  <div class="competence-bulle">
+    <p> Java</p>
+  </div>
+  <div class="competence-bulle">
+    <p> Javascript</p>
+  </div>
+  <div class="competence-bulle">
+    <p> Typescript</p>
+  </div>
+<!-- </div>
+<div class="competences 2"> -->
+  <div class="competence-bulle">
+    <p> C</p>
+  </div>
+  <div class="competence-bulle">
+    <p>C++</p>
+  </div>
+<!-- </div>
+<div class="competences 3"> -->
+  <div class="competence-bulle">
+    <p> SQL</p>
+  </div>
+  <div class="competence-bulle">
+    <p> HTML</p>
+  </div>
+  <div class="competence-bulle">
+    <p> CSS</p>
+  </div>
+</div>
+
+ <!-- New CV Button Box -->
+ <div class="cv-container">
+  <a href="CV.pdf" target="_blank" class="cv-button">
+    Voir Mon CV
+  </a>
+</div>
+
+</section>
+    
+
+    <!-- Formation -->
+<section id="formation" data-aos="fade-up">
+  <div class="section-heading ">
+    <span class="about-num">02.</span>
+    <h2 class="about-heading gradient-text">Formation</h2>
+    <hr />
+    <div class="empty-space"></div>
+  </div>
+
+  <!-- Timeline -->
+  <div class="timeline">
+
+    <!--Well, The reason for this div is to fill space. 
+  This space is technically used for keeping dates, 
+  but I didn't find the need for dates. However, I'll provide 
+  you the styling for dates, so that you can use it if you 
+  wanted to.-->
+  <div id="date-1" class="timeline-empty">2025<br><br><br><br><br><br><br><br><br><br><br><br>2022</div>
+
+  <!--This is the class where the timeline graphics are 
+  housed in. Note that we have timeline-circle 
+  here for that pointer in timeline.-->
+
+        <div class="timeline-middle">
+          <div class="timeline-circle"></div>
+      </div>
+      <div class="timeline-component timeline-content">
+          <h3>Ecole d'ingénieur en Informatique</h3>
+          <p><a href="https://enseirb-matmeca.bordeaux-inp.fr/fr" target="_blank"><span class="highlighted-text enseirb">Enseirb-Matmeca</span></a>, Talence</p>
+          <p>Étudiant en 3ème et dernière année de la filière informatique spécialité intelligence artificielle.<br>Cursus de 3 ans menant à un diplôme d'ingénieur (niveau Master).</p>
+          <p class="matiere">Algorithmiques, Programmation, Datascience, Ingenierie, Intelligence Artificielle</p>
+      </div>
+          <div class="timeline-component timeline-content2">
+                  <h3>Classe préparatoire aux grandes écoles</h3>
+                  <p><span class="highlighted-text">Lycée Camille-Jullian</span>, Bordeaux</p>
+                  <p>Classe préparatoire cursus MPSI-MP</p>
+                  <p class="matiere">Analyse, Algèbre, Physique, Science de l'ingénieur</p>
+          </div>
+          <div class="timeline-middle">
+              <div class="timeline-circle"></div>
+          </div>
+          <div id="date-2" class="timeline-empty">2022<br><br><br><br><br><br><br><br>2020</div>
+
+          <div id="date-3" class="timeline-empty">
+            2020<br><br><br><br><br><br><br>2017
+          </div>
+
+        <div class="timeline-middle">
+            <div class="timeline-circle"></div>
+        </div>
+        <div class=" timeline-component timeline-content">
+          <h3>Baccalauréat Scientifique</h3>
+          <p><span class="highlighted-text">Lycée Nord Bassin - Simon Weil</span>, Andernos-Les-Bains</p>
+          <p>Baccalauréat scientifique option Mathématiques</p>
+    </div>
+
+  </div>
+</section>  
+
+<!-- Experience -->
+<section id="experience" data-aos="fade-up">
+  <div class="section-heading">
+    <span class="about-num">03.</span>
+    <h2 class="about-heading gradient-text">Expérience Professionnelle</h2>
+    <hr />
+    <div class="empty-space"></div>
+  </div>
+  
+  <!-- Carte d'expérience : Stage en IA -->
+  <div class="experience-card">
+    <div class="experience-heading">
+      <h3>Stagiaire - Développeur IA</h3>
+      <span>Scalable Software System Group - Technische Universität Berlin <br></span>
+      <span class="date">Juillet - Septembre 2024</span>
+    </div>
+    <p class="experience-description">
+      Conception de modèles d'intelligence artificielle pour des satellites en orbite basse : <br>
+      Développement, déploiement et tests de modèles de reconnaissance d'image légers permettant de fonctionner 
+       sur des dispositifs à faible ressources de calcul et sans serveur distant.
+       L'objectif étant de permettre aux satellites de reconnaitre les images importantes tels que des feux de forêt 
+       ou des images de l'évolution du déreglement climatique pour ensuite les envoyer sur terre.
+    </p>
+  </div>
+
+  <!-- Carte d'expérience : Expériences estivales -->
+  <div class="experience-card summer-job">
+    <div class="experience-heading">
+      <h3>Expériences Job d'été</h3>
+      <span class="date">2019 - 2023</span>
+    </div>
+    <ul class="experience-list">
+      <p>
+        <span class="experience-date">Juillet - Août<br>2023</span>
+        <span class="experience-arrow">►</span>
+        <span class="experience-details"><strong>Commis de cuisine et plongeur</strong> - Pizzeria des Bois, Le Porge</span>
+      </p>
+      <p>
+        <span class="experience-date">Juillet - Août<br>2021</span>
+        <span class="experience-arrow">►</span>
+        <span class="experience-details"><strong>Serveur et vendeur</strong> - Camping Les Pastourelles, Lège-Cap Ferret</span>
+      </p>
+      <p>
+        <span class="experience-date">Depuis<br>2020</span>
+        <span class="experience-arrow">►</span>
+        <span class="experience-details"><strong>Professeur particulier</strong> - Mathématiques et Physique</span>
+      </p>
+      <p>
+        <span class="experience-date">Août - Novembre<br>2019</span>
+        <span class="experience-arrow">►</span>
+        <span class="experience-details"><strong>Equipier polyvalent</strong> - McDonald, Arès</span>
+      </p>
+    </ul>
+    
+    
+  </div>
+
+</section>
+    
+<!-- Portfolio -->
+<section id="portfolio" data-aos="fade-up">
+  <div class="section-heading">
+    <span class="about-num">04.</span>
+    <h2 class="about-heading gradient-text">Portfolio</h2>
+    <hr />
+    <div class="empty-space"></div>
+  </div>
+  <!-- Portfolio Cards Grid -->
+  <div class="projects-grid">
+    <!-- Carte 1 -->
+    <div class="projects-card">
+      <div class="card-header"></div>
+      <div class="card-title">Détection de la Maladie d'Alzheimer à partir d'IRM Cérébrales</div>
+      <div class="card-desc">Développement d'une méthode de détection des stades d'Alzheimer à partir d'IRM 3D du cerveau, utilisant des architectures U-Net et des stratégies comme les coupes 2D et patchs 3D.</div>
+      <div class="card-tech"><br>TensorFlow, Deep Learning, Computer Vision, CNN, U-net, Traitement 2D/3D</div>
+    </div>
+    <!-- Carte 2 -->
+    <div class="projects-card">
+      <div class="card-header"></div>
+      <div class="card-title">Détection de Nématodes pour la préservation des pins</div>
+      <div class="card-desc">Développement d'un modèle de vision par ordinateur pour détecter et compter les nématodes dans des échantillons microscopiques, afin de suivre leur prolifération et prévenir la destruction des pins.</div>
+      <div class="card-tech"><br>Computer Vision, TensorFlow, Deep Learning, Analyse d'image</div>
+    </div>
+    <!-- Carte 3 -->
+    <div class="projects-card">
+      <div class="card-header"></div>
+      <div class="card-title">Machine Learning - Joueur de GO</div>
+      <div class="card-desc">Développement d'un modèle d'IA performant pour jouer au jeu de Go, intégrant des algorithmes de recherche avancés et des techniques d'apprentissage automatique pour analyser les parties et optimiser les performances du jeu.</div>
+      <div class="card-tech"><br>PyTorch, Machine Learning, Algorithme de recherche</div>
+    </div>
+    <!-- Carte 4 -->
+    <div class="projects-card">
+      <div class="card-header"></div>
+      <div class="card-title">Recommandation sécurisée d'itinéraires pour la micromobilité</div>
+      <div class="card-desc">Développement d'une application multiplateforme, exploitant le traitement des données et l'optimisation multicritère pour recommander des itinéraires plus sûrs pour les vélos et les trottinettes en milieu urbain.</div>
+      <div class="card-tech"><br>Python, Java, SQL, JavaScript, Android, React</div>
+    </div>
+    <!-- Carte 5 -->
+    <div class="projects-card">
+      <div class="card-header"></div>
+      <div class="card-title">Développement de jeux et heuristiques</div>
+      <div class="card-desc">Développement de plusieurs jeux incluant la conception d'heuristiques pour deux jeux de plateau (Mansuba et Amazon) ainsi qu’un jeu de Tower Defense.</div>
+      <div class="card-tech">C, JavaScript, HTML, CSS, Architecture Client/Serveur, Travail d'équipe</div>
+    </div>
+    <!-- Carte 6 -->
+    <div class="projects-card">
+      <div class="card-header"></div>
+      <div class="card-title">Projet de covoiturage avec base de données</div>
+      <div class="card-desc">Développement d'une base de données relationnelle et de son interface pour le covoiturage sur le campus, couvrant la modélisation des données, la gestion des utilisateurs, la planification des trajets et les fonctionnalités de retour d'informations.</div>
+      <div class="card-tech"><br>SQL, PHP, Html, CSS</div>
+    </div>
+    <!-- Carte 7 -->
+    <div class="projects-card">
+      <div class="card-header"></div>
+      <div class="card-title">Robot collecteur de déchets</div>
+      <div class="card-desc">Programmation et optimisation du trajet d'un robot collecteur de déchets évitant les obstacles.</div>
+      <div class="card-tech">Théorie des graphes, Pondération des chemins, Optimisation des chemins</div>
+    </div>
+    <!-- Carte 8 -->
+    <div class="projects-card">
+      <div class="card-header"></div>
+      <div class="card-title">Projets algorithmiques numériques</div>
+      <div class="card-desc">Une série de projets axés sur l'algorithmique numérique, comprenant la modélisation de vagues, de pendules à N maillons, de pressions sur une aile d'avion, de calcul de points de Lagrange, entre autres problématiques complexes.</div>
+      <div class="card-tech"><br>Python, Analyse, Algèbre, Mathématiques appliquées</div>
+    </div>
+    <!-- Carte 9 -->
+    <div class="projects-card">
+      <div class="card-header"></div>
+      <div class="card-title">Raccordement de courbes lisses</div>
+      <div class="card-desc">Projet personnel de mathématiques appliquées présenté à l'université de Paris : Etude, élaboration et implémentation de solutions permettant de minimiser les accidents routiers grâce aux courbes clothoïdes.</div>
+      <div class="card-tech"><br>Mathématiques appliquées, Calcul intégral et différentiel, Analyse, Python</div>
+    </div>
+</section>
+    
+
+
+
+
+<!-- Contact -->
+<section id="contact" data-aos="fade-up">
+  <div class="section-heading">
+    <span class="about-num">05.</span>
+    <h2 class="about-heading gradient-text">Contact</h2>
+    <hr />
+    <div class="empty-space"></div>
+  </div>
+
+  <div class="contact-container">
+    <div class="contact-links">
+      <a href="mailto:corentin.perdrizet@enseirb-matmeca.fr" class="btnmore">
+        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="mail" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+          <path d="M437.332 80H74.668C51.199 80 32 99.198 32 122.667v266.666C32 412.802 51.199 432 74.668 432h362.664C460.801 432 480 412.802 480 389.333V122.667C480 99.198 460.801 80 437.332 80zM432 170.667L256 288 80 170.667V1281176 117.333L432 128v42.667z"></path>
+        </svg>
+        Mail
+      </a>
+    </div>
+    <div class="linkedin-link">
+      <a href="https://www.linkedin.com/in/corentin-perdrizet-53a914264/" target="_blank">
+        <img src="logo.png" alt="LinkedIn Logo" class="linkedin-logo">
+      </a>
+    </div>    
+  </div>
+</section>
+  </main>
+
+  <footer>
+    <p>© Corentin Perdrizet 2024. Tous droits réservés.</p>
+  </footer>
+
+  <!-- Script détéctant lorsque l'on est en haut
+     de la page pour rendre le header transparent -->
+     <script>
+      const languageToggle = document.querySelector('.language-toggle');
+      const languageBubbles = document.querySelector('.language-bubbles');
+  
+      let hideTimeout;
+  
+      languageToggle.addEventListener('mouseenter', () => {
+        clearTimeout(hideTimeout); // Annule le timer si l'utilisateur revient rapidement
+        languageBubbles.style.opacity = '1';
+        languageBubbles.style.pointerEvents = 'auto';
+      });
+  
+      languageToggle.addEventListener('mouseleave', () => {
+        hideTimeout = setTimeout(() => {
+          languageBubbles.style.opacity = '0';
+          languageBubbles.style.pointerEvents = 'none';
+        }, 100); // Garde les bulles affichées pendant 2 secondes
+      });
+  
+  
+      function updateHeaderClass() {
+        if (window.scrollY === 0) {
+          header.classList.remove("scrolled");
+        } else {
+          header.classList.add("scrolled");
+        }
+      }
+      window.addEventListener("scroll", updateHeaderClass);
+      updateHeaderClass();
+    </script>
+
+
+
+<script>
+  AOS.init();
+</script>
+
+
+
+</body>
+</html>

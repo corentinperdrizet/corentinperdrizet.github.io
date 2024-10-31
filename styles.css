@@ -10,10 +10,28 @@ body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
   color: #808aa7;
-  background-color: #0a192f;
+  background-color: #020915;
   font-size: 0.8em;
 }
+
+.gradient-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #55e9fa, #1d4a8e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
   
+.intro-description {
+  color: #bdc3c7;
+  font-size: 1.28rem;
+  line-height: 4;
+  text-align: justify;
+}
+
 /* Styles pour le header transparent */
 header {
   background-color: transparent;
@@ -33,28 +51,36 @@ header {
   z-index: 100;
 }
 
+
+
 #competencesdev{
   color: #bdc3c7;
   font-size: 1.2em;
 }
 
-/* Styles pour le header avec arrière-plan lors du défilement */
-/* header.scrolled {
-  background-color: #0a192f;
-  padding: 1.5rem 0;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.cv-container {
   display: flex;
-  flex-direction: column;
-  align-items: center; */
+  justify-content: center;
+  margin-top: 20px;
+}
 
-  /* Pour garder la visibilité lorsqu'on descend la page */
-  /* position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-} */
+.cv-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #55e9fa, #1d4a8e);
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cv-button:hover {
+  background: #55e9fa;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
 
 .typewriter {
   display: flex;
@@ -63,7 +89,7 @@ header {
 }
 
 .typewriter h1 {
-  color: #ccd6f6;
+  color: #dffbff;
   overflow: hidden;
   white-space: nowrap;
   margin: 0;
@@ -78,9 +104,14 @@ header {
   position: absolute;
   top: 10px;
   right: -1px;
-  border-left: 0.08em solid #64ffda;
+  border-left: 0.08em solid #55e9fa;
   height: 1.1em; /* Ajustez la hauteur du curseur pour correspondre au texte */
   animation: blink-caret 1.0s step-end infinite;
+}
+
+.point-icon {
+  font-size: 24px;
+  color: #55e9fa;
 }
 
 @keyframes typing {
@@ -90,7 +121,7 @@ header {
 
 @keyframes blink-caret {
   from, to { border-color: transparent; }
-  50% { border-color: #64ffda; }
+  50% { border-color: #55e9fa; }
 }
 
 .typewriter img {
@@ -111,83 +142,80 @@ header {
   position: relative;
 }
 
-/* Styles pour le bouton d'accueil */
-.home-btn {
-  font-weight: bold;
-  color: #fff;
-  text-decoration: none;
+/* Icône Home */
+.home-icon {
+  width: 28px;
+  height: 28px;
+  margin-left: -100px;
+  background-image: url('home.png');
+  background-size: cover;
+  transition: background-image 0.3s ease;
 }
 
-/* Styles pour le bouton d'accueil au survol */
-.home-btn:hover {
-  color: #bdc3c7;
+.home-icon:hover {
+  background-image: url('home2.png');
 }
 
-/* Styles pour la section du drapeau */
+
+/* Container pour les langues */
 .language-toggle {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-/* Styles pour l'icône de drapeau */
-.flag-icon {
-  width: 24px; /* Ajustez la taille selon vos besoins */
-  height: 16px; /* Ajustez la taille selon vos besoins */
-}
-
-/* Styles pour le menu déroulant */
-.flag-dropdown {
-  display: none;
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 1;
-}
-
-/* Styles pour les liens du menu déroulant */
-.flag-dropdown a {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  color: #333;
-  transition: background-color 0.3s ease;
-}
-
-/* Styles pour les liens du menu déroulant au survol */
-.flag-dropdown a:hover {
-  background-color: #f0f0f0;
-}
-
-/* Styles pour afficher le menu déroulant lors du survol du drapeau */
-.flag-container:hover .flag-dropdown {
-  display: block;
-}
-
-/* Styles pour le conteneur du menu déroulant avec les drapeaux */
-.flag-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espacement entre l'icône Home et le sélecteur de langue */
   position: relative;
 }
 
-/* Styles pour le menu déroulant avec les drapeaux */
-.flag-dropdown {
-  display: none;
-  position: absolute;
-  top: 100%; /* Positionne le menu en dessous du conteneur */
-  right: 0; /* Positionne le menu à l'extrême droite */
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+.language-icon {
+  cursor: pointer;
+  margin-left: 100px;
 }
 
-/* Styles pour afficher le menu déroulant au survol */
-.flag-container:hover .flag-dropdown {
-  display: block;
+/* Styles pour les bulles de langue */
+.language-bubbles {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  gap: 5px;
+  position: absolute;
+  top: 120%; /* Positionné sous l’icône */
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease 0.5s; /* Ajout d'un délai */
+  pointer-events: none;
+}
+
+/* Affiche les bulles au survol de l'icône ou des bulles elles-mêmes */
+.language-toggle:hover .language-bubbles,
+.language-bubbles:hover {
+  opacity: 1;
+  transition-delay: 0s;
+  pointer-events: auto;
+}
+
+/* Style des bulles de langue */
+.lang-bubble {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  text-align: center;
+  text-decoration: none;
+  color: #55e9fa;
+  border: 1px solid #55e9fa;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+
+/* Langue active */
+.current-lang {
+  background: linear-gradient(135deg, #55e9fa, #1d4a8e);
+  color: white;
+  border: none;
+}
+
+.lang-bubble:hover {
+  background-color: #55e9fa;
+  color: #020915;
 }
 
 /* Styles pour la navigation */
@@ -203,7 +231,7 @@ nav li {
 
 
 nav a {
-  color: #64ffda;
+  color: #55e9fa;
   text-decoration: none;
   font-weight: bold;
 }
@@ -218,6 +246,15 @@ nav a:hover {
   height: 100vh;
   align-items: center;
   justify-content: center;
+  /* overflow: hidden; */
+}
+
+#brain-video {
+  width: 100%; 
+  height: auto;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
 }
 
 .intro-text {
@@ -236,7 +273,7 @@ nav a:hover {
 
 
 .welcome-text {
-  color: #64ffda;
+  color: #55e9fa;
   font-size: 1rem;
   font-weight: bold;
 }
@@ -248,12 +285,7 @@ nav a:hover {
   margin-bottom: 0.5rem;
 }
 
-.intro-description {
-  color: #bdc3c7;
-  font-size: 1rem;
-  line-height: 1.6;
-  text-align: justify;
-}
+
 
 #molecule {
   border: none;
@@ -266,7 +298,7 @@ a:link
 } 
 
 .highlighted-text {
-  color: #64ffda;
+  color: #55e9fa;
   /* text-decoration: none; */
 }
 
@@ -277,19 +309,19 @@ a:link
   font-family: 'Nunito', sans-serif; /* Remplacez 'Nunito' par la police de votre choix */
   text-align: center;
   padding: 6px 12px;
-  color: #64ffda; /* Nouvelle couleur */
+  color: #55e9fa; /* Nouvelle couleur */
   background-color: transparent;
   display: inline-block;
   margin-right: 10px;
   margin-bottom: 10px; /* Espace en bas pour forcer le retour à la ligne */
   border-radius: 20px; /* Bord arrondi */
-  box-shadow: 3px 3px 10px #64ffda, -1px -1px 1px #1d4a8e; /* Ombre */
+  box-shadow: 3px 3px 10px #55e9fa, -1px -1px 1px #1d4a8e; /* Ombre */
 }
 
 
 .enseirb{
-  border-bottom: 1px solid #64ffda;
-  color: #64ffda; /* Pour conserver la couleur du texte d'origine */
+  border-bottom: 1px solid #55e9fa;
+  color: #55e9fa; /* Pour conserver la couleur du texte d'origine */
   text-decoration: none; /* Pour supprimer le soulignement par défaut */
 }
 
@@ -298,7 +330,7 @@ a:link
 }
 
 .intro-description-school{
-  color: #64ffda;
+  color: #55e9fa;
 }
 
 .label {
@@ -311,7 +343,7 @@ a:link
 h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
-  color: #64ffda;
+  color: #55e9fa;
 }
 
 /* Styles pour le contenu principal */
@@ -362,7 +394,7 @@ footer p {
 
 /* Styles pour le numéro de titre */
 .about-num {
-  color: #64ffda;
+  color: #55e9fa;
   font-family: Dosis, sans-serif;
   font-size: 3rem;
   margin-bottom: 1rem;
@@ -388,8 +420,9 @@ footer p {
 }
 
 .projects-card {
-  background-color: #10213e;
-  border-radius: 16px;
+  background: linear-gradient(135deg, #020915 0%, #1d4a8e 150%);
+  border: 1px solid #1d4a8e;
+  border-radius: 30px;
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -422,7 +455,7 @@ footer p {
 
 .card-tech {
   font-size: 0.8em;
-  color: #64ffda;
+  color: #55e9fa;
   margin-top: auto;
 }
   
@@ -436,17 +469,147 @@ footer p {
   margin-bottom: 20px;
 } */
 
+.projects-card {
+  background: linear-gradient(135deg, #020915 0%, #1d4a8e 150%);
+  border: 1px solid #1d4a8e;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.75rem;
+  position: relative;
+  height: 100%;
+}
+
+.experience-card {
+  background: linear-gradient(135deg, #131a29 20%, #1d4a8e 500%);
+  border: 0.5px solid #55e9fa;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  position: relative;
+  height: 100%;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #e2e8f0;
+  margin-bottom: 1.5rem;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 18px rgba(0, 0, 0, 0.35);
+}
+
+.experience-card h3 {
+  font-size: 1.2rem;
+  color: #87d4dd;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.experience-card p {
+  font-size: 1rem;
+  color: #9aa0a9;
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.experience-card .date {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #7aa8c9;
+  margin-bottom: 1rem;
+}
+
+
+.date {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #7aa8c9;
+  margin-top: 0.3rem;
+}
+
+.experience-description {
+  color: #cbd6e2;
+  margin-top: 1rem;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.summer-job .experience-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.summer-job .experience-list li {
+  color: #cbd6e2;
+  font-size: 0.95rem;
+  padding-left: 1rem;
+  margin-bottom: 0.8rem;
+  position: relative;
+}
+
+.summer-job .experience-list li:before {
+  content: "➤";
+  position: absolute;
+  left: 0;
+  color: #55e9fa;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+
+
 .experience-point {
   display: flex;
   align-items: flex-start;
   margin-bottom: 20px;
 }
 
+.experience-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.experience-list li {
+  display: flex;
+  align-items: center;
+}
+
 .experience-date {
-  width: 120px; 
-  text-align: center; 
-  margin-right: 20px; 
-  margin-top: 5px;
+  color: #7aa8c9; /* Gris pour les dates */
+  font-size: 0.9rem;
+  width: 100px;
+  text-align: center;
+  line-height: 1.4; /* Ajustez pour l'espacement */
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+
+.experience-arrow {
+  color: #55e9fa; /* Bleu clair pour la flèche */
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  /* margin: 0 0.5rem; */
+}
+
+.experience-details {
+  color: #c5c5c5; /* Blanc pour l'intitulé */
+  font-size: 1rem;
+  font-weight: 1;
+}
+
+.experience-list li strong {
+  color: #e2e8f0;
 }
 
 .point {
@@ -499,11 +662,52 @@ footer p {
   flex-direction: column;
 }
 
+
+.timeline-content {
+  padding: 1.5rem;
+  background: linear-gradient(145deg, #131a29 0%, #1c2539 100%);
+  border-left: 4px solid #55e9fa;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3), inset 0 0 10px rgba(0, 0, 0, 0.5);
+  color: #e0e8f3;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 20px;
+  margin: 1rem;
+  width: 400px;
+}
+
+.timeline-content2 {
+  padding: 1.5rem;
+  background: linear-gradient(145deg, #131a29 0%, #1c2539 100%);
+  border-right: 4px solid #55e9fa;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3), inset 0 0 10px rgba(0, 0, 0, 0.5);
+  color: #e0e8f3;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius:20px;
+  margin: 1rem;
+  width: 400px;
+}
+
+.timeline-content h3 {
+  color: #87d4dd;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content2 h3 {
+  color: #87d4dd;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+
+/* 
 .timeline-content {
   padding: 20px;
   background: #1f1f1f;
   -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
-  box-shadow: 3px 3px 10px #64ffda, -1px -1px 1px #1d4a8e;
+  box-shadow: 3px 3px 10px #55e9fa, -1px -1px 1px #1d4a8e;
   border-radius: 5px;
   color: white;
   padding: 1.75rem;
@@ -513,7 +717,7 @@ footer p {
   margin-bottom: 20px;
   border-radius: 6px;
   width: 400px
-}
+} */
 
 .timeline-component {
   margin: 0px 20px 20px 20px;
@@ -521,7 +725,7 @@ footer p {
 
 .timeline-middle {
   position: relative;
-  background-image: linear-gradient(45deg, #64ffda, #1d4a8e);
+  background-image: linear-gradient(45deg, #55e9fa, #1d4a8e);
   width: 3px;
   height: 100%;
 }
@@ -537,7 +741,7 @@ footer p {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-image: linear-gradient(45deg, #64ffda, #0a192f);
+  background-image: linear-gradient(45deg, #55e9fa, #0a192f);
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
@@ -580,6 +784,19 @@ footer p {
   margin-left: 20px; /* Ajouter un espacement entre les liens (modifier margin-top à margin-left) */
 }
 
+.linkedin-link .linkedin-logo {
+  margin-top: 4px;
+  width: 42px; /* Ajustez la taille selon vos préférences */
+  height: auto;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.linkedin-link a:hover .linkedin-logo {
+  content: url('logo2.png'); /* Change l'image au survol */
+  transform: scale(1.1); /* Agrandit légèrement au survol */
+  opacity: 0.8; /* Légère transparence au survol */
+}
+
 .btnmore {
   text-decoration: none;
   font-size: 1.5rem;
@@ -589,9 +806,9 @@ footer p {
   text-align: center;
   align-items: center;
   background: #0a192f;
-  border: 0.1rem solid #64ffda;
+  border: 0.1rem solid #55e9fa;
   border-radius: 0.5rem;
-  color: #64ffda;
+  color: #55e9fa;
   cursor: pointer;
   font-family: NTR, sans-serif;
   font-size: 1rem;
@@ -600,7 +817,7 @@ footer p {
 }
 
 .btnmore:hover {
-  background-color: #64ffda;
+  background-color: #55e9fa;
   color: #0a192f;
 }
 
