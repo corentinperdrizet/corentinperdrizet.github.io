@@ -5,286 +5,286 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Corentin Perdrizet</title>
   <link rel="icon" type="image/png" href="logo_C.png">
-  <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"/>
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
-
-<!-- Ligne pour charger Three.js depuis le dossier portfolio -->
   <script src="three.js/build/three.min.js"></script>
 
-  
-
-
   <link rel="stylesheet" href="styles.css">
-
 </head>
+
 <body>
-  <header id="main-header">
-    <div class="header-container" style="display: flex; align-items: center; justify-content: space-between;">
-      
-      <!-- Bouton Home avec image -->
-      <a href="#" class="home-btn" style="margin-right: auto;">
-        <img src="home.png" alt="Home" class="home-icon">
-      </a>
-      
-      <nav>
-        <ul>
-          <li><a href="#apropos">À propos de moi</a></li>
-          <li><a href="#formation">Formation</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#experience">Expérience</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-  
-      <!-- Sélection de langue avec bulles -->
-      <div class="language-toggle" style="display: flex; align-items: center; gap: 10px; margin-left: 10px;">
-        <img src="language.png" alt="Language Selection" class="language-icon" style="width: 24px; height: 24px; cursor: pointer;"/>
-        <div class="language-bubbles">
-          <a href="index.html" class="lang-bubble">English</a>
-          <a href="french.html" class="lang-bubble current-lang">French</a>
-        </div>
+
+<header id="main-header">
+  <div class="header-container" style="display:flex;align-items:center;justify-content:space-between;">
+
+    <a href="#" class="home-btn" style="margin-right:auto;">
+      <img src="home.png" alt="Home" class="home-icon">
+    </a>
+
+    <nav>
+      <ul>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#formation">Formation</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#experience">Expérience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="language-toggle" style="display:flex;align-items:center;gap:10px;margin-left:10px;">
+      <img src="language.png" alt="Language Selection" class="language-icon" style="width:24px;height:24px;cursor:pointer;"/>
+      <div class="language-bubbles">
+        <a href="index.html" class="lang-bubble">English</a>
+        <a href="french.html" class="lang-bubble current-lang">French</a>
       </div>
-  
-    </div>
-  </header>
- 
-  
-  <main>
-
-
-    <div class="intro" style="display: flex; justify-content: space-between;">
-      <div class="intro-text" style="margin-left: -100px; flex: 0 0 50%;">
-        <!-- <p class="welcome-text">Bienvenue, moi c'est</p> -->
-        <!-- <h1 class="intro-name">Corentin Perdrizet</h1> -->
-        <!-- Dans votre balise <h1> où se trouve votre nom -->
-          <div class="typewriter">
-            <h1 id="animated-text">Corentin Perdrizet<span id="cursor"></span></h1>
-          </div>
-          <p class="intro-description gradient-text">
-            Étudiant ingénieur en Intelligence Artificielle
-          </p>
-      </div>
-       <!-- Intégration de la vidéo en remplacement de l'iframe -->
-       <video id="brain-video" style="width: 80%; height: auto; margin-left: 30px; flex: 0 0 50%;" autoplay loop muted preload="auto">
-        <source src="brain2MO.mov" type="video/mp4">
-        Votre navigateur ne supporte pas les vidéos HTML5.
-      </video>
-    </div>
-
-    
-    
-    
-<!-- À propos -->
-<section id="apropos" data-aos="fade-up">
-  <div class="section-heading">
-    <span class="about-num">01.</span>
-    <h2 class="about-heading gradient-text">À propos de moi</h2>
-    <hr />
-    <div class="empty-space"></div>
-  </div>
-  <!-- Contenu de la section À propos -->
-  <p>Actuellement <span class="highlighted-text">stagiaire ingénieur IA / Data-Science</span> chez <span class="highlighted-text">Thales</span> à <span class="highlighted-text">Singapour</span>, je suis étudiant en dernière année d'école d'ingénieur informatique spécialisé en <span class="highlighted-text">intelligence artificielle</span> à l'<a href="https://enseirb-matmeca.bordeaux-inp.fr/fr" target="_blank"><span class="highlighted-text">Enseirb-Matmeca</span></a>.</p>
-
-  
-
-
-  <span id="competencesdev">Compétences développées :</span>
- <!-- Compétences -->
- <br>
- <br>
-<div class="competences 1">
-  <div class="competence-bulle">
-    <p> Python</p>
-  </div>
-  <div class="competence-bulle">
-    <p> TensorFlow</p>
-  </div>
-  <div class="competence-bulle">
-    <p> PyTorch</p>
-  </div>
-  <div class="competence-bulle">
-    <p> Machine Learning</p>
-  </div>
-  <div class="competence-bulle">
-    <p> Deep Learning</p>
-  </div>
-  <div class="competence-bulle">
-    <p> Reinforcment Learning</p>
-  </div>
-  <div class="competence-bulle">
-    <p> Natural Language Processing</p>
-  </div>
-  <div class="competence-bulle">
-    <p> Large Language Model</p>
-  </div>
-  <div class="competence-bulle">
-    <p> Java</p>
-  </div>
-  <div class="competence-bulle">
-    <p> Javascript</p>
-  </div>
-  <div class="competence-bulle">
-    <p> Typescript</p>
-  </div>
-<!-- </div>
-<div class="competences 2"> -->
-  <div class="competence-bulle">
-    <p> C</p>
-  </div>
-  <div class="competence-bulle">
-    <p>C++</p>
-  </div>
-<!-- </div>
-<div class="competences 3"> -->
-  <div class="competence-bulle">
-    <p> SQL</p>
-  </div>
-  <div class="competence-bulle">
-    <p> HTML</p>
-  </div>
-  <div class="competence-bulle">
-    <p> CSS</p>
-  </div>
-</div>
-
- <!-- New CV Button Box -->
- <div class="cv-container">
-  <a href="CV.pdf" target="_blank" class="cv-button">
-    Voir Mon CV
-  </a>
-</div>
-
-</section>
-    
-
-    <!-- Formation -->
-<section id="formation" data-aos="fade-up">
-  <div class="section-heading ">
-    <span class="about-num">02.</span>
-    <h2 class="about-heading gradient-text">Formation</h2>
-    <hr />
-    <div class="empty-space"></div>
-  </div>
-
-  <!-- Timeline -->
-  <div class="timeline">
-
-    <!--Well, The reason for this div is to fill space. 
-  This space is technically used for keeping dates, 
-  but I didn't find the need for dates. However, I'll provide 
-  you the styling for dates, so that you can use it if you 
-  wanted to.-->
-  <div id="date-1" class="timeline-empty">2025<br><br><br><br><br><br><br><br><br><br><br><br>2022</div>
-
-  <!--This is the class where the timeline graphics are 
-  housed in. Note that we have timeline-circle 
-  here for that pointer in timeline.-->
-
-        <div class="timeline-middle">
-          <div class="timeline-circle"></div>
-      </div>
-      <div class="timeline-component timeline-content">
-          <h3>Ecole d'ingénieur en Informatique</h3>
-          <p><a href="https://enseirb-matmeca.bordeaux-inp.fr/fr" target="_blank"><span class="highlighted-text enseirb">Enseirb-Matmeca</span></a>, Talence</p>
-          <p>Étudiant en 3ème et dernière année de la filière informatique spécialité intelligence artificielle.<br>Cursus de 3 ans menant à un diplôme d'ingénieur (niveau Master).</p>
-          <p class="matiere">Algorithmiques, Programmation, Datascience, Ingenierie, Intelligence Artificielle</p>
-      </div>
-          <div class="timeline-component timeline-content2">
-                  <h3>Classe préparatoire aux grandes écoles</h3>
-                  <p><span class="highlighted-text">Lycée Camille-Jullian</span>, Bordeaux</p>
-                  <p>Classe préparatoire cursus MPSI-MP</p>
-                  <p class="matiere">Analyse, Algèbre, Physique, Science de l'ingénieur</p>
-          </div>
-          <div class="timeline-middle">
-              <div class="timeline-circle"></div>
-          </div>
-          <div id="date-2" class="timeline-empty">2022<br><br><br><br><br><br><br><br>2020</div>
-
-          <div id="date-3" class="timeline-empty">
-            2020<br><br><br><br><br><br><br>2017
-          </div>
-
-        <div class="timeline-middle">
-            <div class="timeline-circle"></div>
-        </div>
-        <div class=" timeline-component timeline-content">
-          <h3>Baccalauréat Scientifique</h3>
-          <p><span class="highlighted-text">Lycée Nord Bassin - Simon Weil</span>, Andernos-Les-Bains</p>
-          <p>Baccalauréat scientifique option Mathématiques</p>
     </div>
 
   </div>
-</section>  
+</header>
 
-<!-- Experience -->
-<section id="experience" data-aos="fade-up">
-  <div class="section-heading">
-    <span class="about-num">03.</span>
-    <h2 class="about-heading gradient-text">Expérience Professionnelle</h2>
-    <hr />
-    <div class="empty-space"></div>
-  </div>
-  
-  <!-- Carte d'expérience : Stage en IA -->
-  <div class="experience-card">
-    <div class="experience-heading">
-      <h3>Stagiaire - IA / Data-Science</h3>
-      <span>Thales, Singapour <br></span>
-      <span class="date">Mai - Octobre 2025</span>
-    </div>
-  </div>
 
-  <!-- Carte d'expérience : Stage en IA -->
-  <div class="experience-card">
-    <div class="experience-heading">
-      <h3>Stagiaire - Développeur IA</h3>
-      <span>Scalable Software System Group - Technische Universität Berlin <br></span>
-      <span class="date">Juillet - Septembre 2024</span>
+<main>
+
+<div class="intro" style="display:flex;justify-content:space-between;">
+
+  <div class="intro-text" style="margin-left:-100px;flex:0 0 50%;">
+    <div class="typewriter">
+      <h1 id="animated-text">Corentin Perdrizet<span id="cursor"></span></h1>
     </div>
-    <p class="experience-description">
-      Conception de modèles d'intelligence artificielle pour des satellites en orbite basse : <br>
-      Développement, déploiement et tests de modèles de reconnaissance d'image légers permettant de fonctionner 
-       sur des dispositifs à faible ressources de calcul et sans serveur distant.
-       L'objectif étant de permettre aux satellites de reconnaitre les images importantes tels que des feux de forêt 
-       ou des images de l'évolution du déreglement climatique pour ensuite les envoyer sur terre.
+
+    <p class="intro-description gradient-text">
+      Ingénieur IA & Data Scientist
     </p>
   </div>
 
-  <!-- Carte d'expérience : Expériences estivales -->
-  <div class="experience-card summer-job">
-    <div class="experience-heading">
-      <h3>Expériences Job d'été</h3>
-      <span class="date">2019 - 2023</span>
-    </div>
-    <ul class="experience-list">
-      <p>
-        <span class="experience-date">Juillet - Août<br>2023</span>
-        <span class="experience-arrow">►</span>
-        <span class="experience-details"><strong>Commis de cuisine et plongeur</strong> - Pizzeria des Bois, Le Porge</span>
-      </p>
-      <p>
-        <span class="experience-date">Juillet - Août<br>2021</span>
-        <span class="experience-arrow">►</span>
-        <span class="experience-details"><strong>Serveur et vendeur</strong> - Camping Les Pastourelles, Lège-Cap Ferret</span>
-      </p>
-      <p>
-        <span class="experience-date">Depuis<br>2020</span>
-        <span class="experience-arrow">►</span>
-        <span class="experience-details"><strong>Professeur particulier</strong> - Mathématiques et Physique</span>
-      </p>
-      <p>
-        <span class="experience-date">Août - Novembre<br>2019</span>
-        <span class="experience-arrow">►</span>
-        <span class="experience-details"><strong>Equipier polyvalent</strong> - McDonald, Arès</span>
-      </p>
-    </ul>
-    
-    
-  </div>
+  <video id="brain-video" style="width:80%;height:auto;margin-left:30px;flex:0 0 50%;" autoplay loop muted preload="auto">
+    <source src="brain2MO.mov" type="video/mp4">
+  </video>
+
+</div>
+
+
+<section id="apropos" data-aos="fade-up">
+
+<div class="section-heading">
+<span class="about-num">01.</span>
+<h2 class="about-heading gradient-text">À propos de moi</h2>
+<hr/>
+<div class="empty-space"></div>
+</div>
+
+<p>Ingénieur en <span class="highlighted-text">intelligence artificielle</span> diplômé de
+<a href="https://enseirb-matmeca.bordeaux-inp.fr/fr" target="_blank">
+<span class="highlighted-text">ENSEIRB-Matméca</span>
+</a>.
+</p>
+
+<p>Je me spécialise en <span class="highlighted-text">machine learning, deep learning, computer vision et traitement du langage naturel</span>. 
+J’ai développé différents systèmes d’IA allant de la reconnaissance d’images satellites à des systèmes d’optimisation pour les services d’urgence.</p>
+
+<span id="skillsdev">Compétences développées :</span>
+
+<br><br>
+
+<div class="competences">
+
+<div class="competence-bulle"><p>Python</p></div>
+<div class="competence-bulle"><p>TensorFlow</p></div>
+<div class="competence-bulle"><p>PyTorch</p></div>
+<div class="competence-bulle"><p>Machine Learning</p></div>
+<div class="competence-bulle"><p>Deep Learning</p></div>
+<div class="competence-bulle"><p>Reinforcement Learning</p></div>
+<div class="competence-bulle"><p>Natural Language Processing</p></div>
+<div class="competence-bulle"><p>Large Language Models</p></div>
+<div class="competence-bulle"><p>Java</p></div>
+<div class="competence-bulle"><p>JavaScript</p></div>
+<div class="competence-bulle"><p>TypeScript</p></div>
+<div class="competence-bulle"><p>C</p></div>
+<div class="competence-bulle"><p>C++</p></div>
+<div class="competence-bulle"><p>SQL</p></div>
+<div class="competence-bulle"><p>HTML</p></div>
+<div class="competence-bulle"><p>CSS</p></div>
+
+</div>
+
+
+<div class="cv-container">
+<a href="CV.pdf" target="_blank" class="cv-button">
+Voir mon CV
+</a>
+</div>
 
 </section>
-    
+
+
+<section id="formation" data-aos="fade-up">
+
+<div class="section-heading">
+<span class="about-num">02.</span>
+<h2 class="about-heading gradient-text">Formation</h2>
+<hr/>
+<div class="empty-space"></div>
+</div>
+
+<div class="timeline">
+
+<div id="date-1" class="timeline-empty">
+2025<br><br><br><br><br><br><br><br><br><br><br><br>2022
+</div>
+
+<div class="timeline-middle">
+<div class="timeline-circle"></div>
+</div>
+
+<div class="timeline-component timeline-content">
+
+<h3>École d'ingénieur en informatique</h3>
+
+<p>
+<a href="https://enseirb-matmeca.bordeaux-inp.fr/fr" target="_blank">
+<span class="highlighted-text enseirb">Enseirb-Matméca</span>
+</a>, Talence
+</p>
+
+<p>Diplôme d’ingénieur en informatique spécialisé en intelligence artificielle et data science.</p>
+
+<p class="subject">
+Algorithmes, programmation, data science, ingénierie, intelligence artificielle
+</p>
+
+</div>
+
+
+<div class="timeline-component timeline-content2">
+
+<h3>Classe préparatoire aux grandes écoles</h3>
+
+<p><span class="highlighted-text">Lycée Camille-Jullian</span>, Bordeaux</p>
+
+<p>Classe préparatoire scientifique MPSI-MP.</p>
+
+<p class="subject">
+Analyse, algèbre, physique, sciences de l’ingénieur
+</p>
+
+</div>
+
+
+<div class="timeline-middle">
+<div class="timeline-circle"></div>
+</div>
+
+<div id="date-2" class="timeline-empty">
+2022<br><br><br><br><br><br><br><br>2020
+</div>
+
+
+<div id="date-3" class="timeline-empty">
+2020<br><br><br><br><br><br><br>2017
+</div>
+
+
+<div class="timeline-middle">
+<div class="timeline-circle"></div>
+</div>
+
+<div class="timeline-component timeline-content">
+
+<h3>Baccalauréat scientifique</h3>
+
+<p>
+<span class="highlighted-text">Lycée Nord Bassin – Simon Weil</span>, Andernos-Les-Bains
+</p>
+
+<p>Baccalauréat scientifique option mathématiques.</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="experience" data-aos="fade-up">
+
+<div class="section-heading">
+<span class="about-num">03.</span>
+<h2 class="about-heading gradient-text">Expérience professionnelle</h2>
+<hr/>
+<div class="empty-space"></div>
+</div>
+
+
+<div class="experience-card">
+
+<div class="experience-heading">
+<h3>Stagiaire – Data Science & AI Engineer</h3>
+<span>Thales – Singapour</span><br>
+<span class="date">Mai 2025 – Novembre 2025</span>
+</div>
+
+<p class="experience-description">
+Développement d’un système modulaire d’optimisation basé sur l’IA pour les services d’urgence.
+Conception de modèles de prédiction du temps de réponse et de stratégies d’allocation des ressources
+à partir de données opérationnelles et publiques.
+Réalisation d’analyses exploratoires et explicatives afin de comprendre les dynamiques
+spatio-temporelles des incidents et fournir des outils d’aide à la décision.
+</p>
+
+</div>
+
+
+<div class="experience-card">
+
+<div class="experience-heading">
+<h3>Stagiaire – Ingénieur IA</h3>
+
+<span>Technische Universität Berlin</span><br>
+
+<span class="date">Juillet – Septembre 2024</span>
+
+</div>
+
+<p class="experience-description">
+
+Développement de modèles d’IA pour satellites en orbite basse.
+
+Conception, déploiement et tests de modèles légers de reconnaissance d’images
+permettant un fonctionnement autonome sur des dispositifs à faible puissance de calcul.
+
+Ces modèles permettent aux satellites de détecter automatiquement des événements critiques
+tels que des feux de forêt ou l’évolution du changement climatique
+et de transmettre les images pertinentes vers la Terre.
+
+</p>
+
+</div>
+
+
+<div class="experience-card other-experience">
+
+<div class="experience-heading">
+<h3>Autres expériences professionnelles</h3>
+</div>
+
+<div class="job-tags">
+
+<span class="job-tag">Professeur particulier</span>
+<span class="job-tag">Commis de cuisine</span>
+<span class="job-tag">Vendeur</span>
+<span class="job-tag">Pizzaiolo</span>
+<span class="job-tag">Plongeur</span>
+<span class="job-tag">Employé polyvalent McDonald's</span>
+<span class="job-tag">Employé municipal</span>
+
+</div>
+
+</div>
+
+</section>
+
+
 <!-- Portfolio -->
 <section id="portfolio" data-aos="fade-up">
   <div class="section-heading">
@@ -382,10 +382,6 @@
   </div>
 </section>
 
-    
-
-
-
 
 <!-- Contact -->
 <section id="contact" data-aos="fade-up">
@@ -398,11 +394,11 @@
 
   <div class="contact-container">
     <div class="contact-links">
-      <a href="mailto:corentin.perdrizet@enseirb-matmeca.fr" class="btnmore">
+      <a href="mailto:corentinperdrizet@gmail.com" class="btnmore">
         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="mail" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
           <path d="M437.332 80H74.668C51.199 80 32 99.198 32 122.667v266.666C32 412.802 51.199 432 74.668 432h362.664C460.801 432 480 412.802 480 389.333V122.667C480 99.198 460.801 80 437.332 80zM432 170.667L256 288 80 170.667V1281176 117.333L432 128v42.667z"></path>
         </svg>
-        Mail
+        Email
       </a>
     </div>
     <div class="linkedin-link">
@@ -412,52 +408,46 @@
     </div>    
   </div>
 </section>
-  </main>
 
-  <footer>
-    <p>© Corentin Perdrizet 2024. Tous droits réservés.</p>
-  </footer>
+</main>
 
-  <!-- Script détéctant lorsque l'on est en haut
-     de la page pour rendre le header transparent -->
-     <script>
-      const languageToggle = document.querySelector('.language-toggle');
-      const languageBubbles = document.querySelector('.language-bubbles');
-  
-      let hideTimeout;
-  
-      languageToggle.addEventListener('mouseenter', () => {
-        clearTimeout(hideTimeout); // Annule le timer si l'utilisateur revient rapidement
-        languageBubbles.style.opacity = '1';
-        languageBubbles.style.pointerEvents = 'auto';
-      });
-  
-      languageToggle.addEventListener('mouseleave', () => {
-        hideTimeout = setTimeout(() => {
-          languageBubbles.style.opacity = '0';
-          languageBubbles.style.pointerEvents = 'none';
-        }, 100); // Garde les bulles affichées pendant 2 secondes
-      });
-  
-  
-      function updateHeaderClass() {
-        if (window.scrollY === 0) {
-          header.classList.remove("scrolled");
-        } else {
-          header.classList.add("scrolled");
-        }
-      }
-      window.addEventListener("scroll", updateHeaderClass);
-      updateHeaderClass();
-    </script>
 
+<footer>
+<p>© Corentin Perdrizet 2026. Tous droits réservés.</p>
+</footer>
 
 
 <script>
-  AOS.init();
+
+const languageToggle = document.querySelector('.language-toggle');
+const languageBubbles = document.querySelector('.language-bubbles');
+
+let hideTimeout;
+
+languageToggle.addEventListener('mouseenter', () => {
+
+clearTimeout(hideTimeout);
+languageBubbles.style.opacity = '1';
+languageBubbles.style.pointerEvents = 'auto';
+
+});
+
+languageToggle.addEventListener('mouseleave', () => {
+
+hideTimeout = setTimeout(() => {
+
+languageBubbles.style.opacity = '0';
+languageBubbles.style.pointerEvents = 'none';
+
+},100);
+
+});
+
 </script>
 
-
+<script>
+AOS.init();
+</script>
 
 </body>
 </html>

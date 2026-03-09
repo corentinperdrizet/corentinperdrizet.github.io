@@ -523,6 +523,39 @@ footer p {
   margin-bottom: 1rem;
 }
 
+.other-experience {
+  background: linear-gradient(135deg, #0d1320 0%, #141b2d 100%);
+  border: 0.5px solid rgba(135, 212, 221, 0.2);
+  opacity: 0.85;
+}
+
+.other-experience:hover {
+  transform: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.25);
+}
+
+.job-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 0.5rem;
+}
+
+.job-tag {
+  background: rgba(135, 212, 221, 0.08);
+  border: 1px solid rgba(135, 212, 221, 0.25);
+  color: #9aa0a9;
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+.other-experience h3 {
+  font-size: 1.05rem;
+}
+
+
 
 .date {
   font-size: 0.9rem;
