@@ -879,3 +879,152 @@ footer p {
   .empty-space {
   flex-grow: 1;
   }
+
+/* === MOBILE / TABLETTE (≤768px) === */
+@media (max-width: 768px) {
+
+  /** Header global compact */
+  header {
+    padding: 0.1rem 0;
+  }
+
+  /* Header container : ligne horizontale pour aligner Home + nav + langue */
+  .header-container {
+    flex-direction: row;           /* ligne horizontale */
+    justify-content: space-between;/* Home à gauche, menu au centre, langue à droite */
+    align-items: center;           /* tous alignés verticalement */
+    width: 100%;
+    max-width: 100%;
+    gap: 5px;                      /* espace réduit */
+    padding: 0 0.5rem;             /* petit padding latéral */
+  }
+
+  /* Menu horizontal compact */
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav li {
+    margin: 0;
+  }
+
+  nav a {
+    font-size: 0.7rem; 
+    padding: 3px 5px;
+  }
+
+  /* Home icon */
+  .home-icon {
+    width: 22px;
+    height: 22px;
+    margin-left: 0;
+  }
+
+  /* Langue */
+  .language-toggle {
+    margin-left: 0;
+  }
+
+  .language-bubbles {
+    margin-left: 0;
+    top: 110%;
+  }
+
+  /* Section intro (texte + vidéo) */
+  .intro {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    padding: 1.5rem 1rem;
+  }
+
+  .intro-text {
+    flex: unset;        /* supprime le flex desktop */
+    width: 100%;        /* prend toute la largeur */
+    margin: 0;          /* supprime le margin-left qui décalait à gauche */
+    padding: 0 0.5rem;  /* petit padding pour respirer */
+  }
+
+  .typewriter h1 {
+    font-size: 1.8rem;       /* taille adaptée aux petits écrans */
+    word-wrap: break-word;    /* pour éviter que le texte déborde */
+    overflow: visible;        /* permet au texte de s'afficher complètement */
+    margin-left: 25%;
+  }
+
+  #cursor {
+    right: 0; /* repositionne le curseur correctement */
+  }
+
+  #brain-video {
+    flex: unset;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .intro-description {
+    line-height: 1.5;
+    font-size: 1rem;
+    margin-left: 10%;
+  }
+
+  /* Timeline verticale simplifiée */
+.timeline {
+      display: flex;
+      flex-direction: column;
+      align-items: center;   /* centrer les blocs */
+      width: 100%;
+      padding: 0;
+  }
+
+  .timeline::before {
+      display: none;         /* supprime la ligne verticale */
+  }
+
+  .timeline-content, .timeline-content2 {
+      width: 90%;            /* presque toute la largeur */
+      margin: 1rem 0;        /* espace entre les blocs */
+      position: static;      /* supprime le positionnement relatif pour les cercles */
+  }
+
+  .timeline-content, .timeline-content2 {
+    margin-left: 35%;
+}
+
+
+  /* Supprimer les cercles */
+.timeline-content::before,
+.timeline-content2::before {
+    content: none;   /* supprime complètement le pseudo-élément */
+}
+
+
+  /* Supprimer complètement les dates */
+  #date-1, #date-2, #date-3 {
+      display: none;
+  }
+
+  /* Contact */
+  .contact-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .contact-links, .linkedin-link {
+    margin-left: 0;
+  }
+
+  /* Compétences (bulles) */
+  .competence-bulle {
+    font-size: 0.6rem;
+    padding: 5px 10px;
+  }
+}
